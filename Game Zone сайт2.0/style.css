@@ -1,0 +1,879 @@
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+header {
+    width: 100%;
+    height: 75px;
+    background: linear-gradient(90deg, #000, #0b0b33, #000);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        color: white;
+        margin-left: 40px;
+        font-size: 26px;
+        font-weight: bold;
+        transition: 1.5s;
+    }
+    .logo:hover {
+        color: black;
+        margin-left: 40px;
+        font-size: 26px;
+        font-weight: bold;
+        text-shadow: 0 0 20px rgb(255, 255, 255);
+    }
+
+    .nav {
+
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .b1 {
+        width: auto;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        transition: 1.5s;
+        color: white;
+        background: white;
+        
+        a {
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 1.5s;
+        }
+        a:hover {
+            color: black;
+        }
+    }
+    .b1:hover {
+        width: auto;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        background: white;
+    }
+    .b2 {
+        width: auto;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        transition: 1.5s;
+        color: white;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .b2:hover {
+        width: auto;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        background: white;
+        color: red;
+    }
+    .b3 {
+        width: auto;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        transition: 1.5s;
+        color: white;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .b3:hover {
+        width: auto;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        background: white;
+        color: red;
+    }
+    .b4 {
+        width: auto;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        transition: 1.5s;
+        color: white;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .b4:hover {
+        width: auto;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        background: white;
+        color: red;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        transition: 1.5s;
+    }
+    a:hover {
+        color: black;
+    }
+}
+.banner {
+    width: 100%;
+    height: 600px;
+    background-image:url(foto/needforspeed.jpg);
+    background-position: center;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.649);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        text-shadow: 0 0 20px white;
+        font-size: 40px;
+    }
+}
+
+.genres {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.desc {
+    width: 90%;
+    margin: 10px auto 40px;
+    font-size: 18px;
+    opacity: 0.8;
+}
+.block {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    overflow: auto;
+    overflow-y: hidden;
+}
+.bloks {
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+    background-image: url(foto/4k-minecraft-man-in-grassfield-gxn8cak11hmj6ras.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+
+    div {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.293);
+        overflow: hidden;
+    }
+}
+.bloks:hover {
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+    background-image: url(foto/4k-minecraft-man-in-grassfield-gxn8cak11hmj6ras.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+
+    div {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        color: gainsboro;
+    }
+}
+.bloks1 {
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+    background-image: url(foto/call-of-duty-ghost-sniper-scope-8iw26035qrzn220b.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+
+    div {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.293);
+        overflow: hidden;
+    }
+}
+.bloks1:hover {
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+    background-image: url(foto/call-of-duty-ghost-sniper-scope-8iw26035qrzn220b.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+
+    div {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        color: gainsboro;
+    }
+}
+.bloks2 {
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+    background-image: url(foto/066a68c17c20b80b9b8c157ac444d76f.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+
+    div {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.293);
+        overflow: hidden;
+    }
+}
+.bloks2:hover {
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+    background-image: url(foto/066a68c17c20b80b9b8c157ac444d76f.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+
+    div {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        color: gainsboro;
+    }
+}
+.bloks3 {
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+    background-image: url(foto/5a9f72c40188b11beb5c373e96a6abd2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+
+    div {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.293);
+        overflow: hidden;
+    }
+}
+.bloks3:hover {
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+    background-image: url(foto/5a9f72c40188b11beb5c373e96a6abd2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+
+    div {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        color: gainsboro;
+    }
+}
+.bloks4 {
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+    background-image: url(foto/grid-2-night-race-svow9u0q46cvmi67.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+
+    div {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.293);
+        overflow: hidden;
+    }
+}
+.bloks4:hover {
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+    background-image: url(foto/grid-2-night-race-svow9u0q46cvmi67.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+
+    div {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        color: gainsboro;
+    }
+}
+.bloks5 {
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+    background-image: url(foto/call-of-duty-ghost-sniper-scope-8iw26035qrzn220b.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+
+    div {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.293);
+        overflow: hidden;
+    }
+}
+.bloks5:hover {
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+    background-image: url(foto/call-of-duty-ghost-sniper-scope-8iw26035qrzn220b.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+
+    div {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        color: gainsboro;
+    }
+}
+.games {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    margin-top: 60px;
+    background-image: url(foto/Playstation-4-Wallpapers-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 30px 30px 0 0;
+
+    div {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.434);
+    }
+}
+.games h3 {
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+}
+main {
+    width: 100%;
+    height: 500px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.game1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(foto/4k-minecraft-man-in-grassfield-gxn8cak11hmj6ras.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    border-radius: 30px;
+    transition: 1s;
+
+    div {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: 30px;
+
+    }
+}
+.game1:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(foto/4k-minecraft-man-in-grassfield-gxn8cak11hmj6ras.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 0 0 20px gray;
+
+    div {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.529);
+        border-radius: 30px;
+    }
+}
+.game2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(foto/maxresdefault.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    border-radius: 30px;
+    transition: 1s;
+
+    div {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: 30px;
+
+    }
+}
+.game2:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(foto/maxresdefault.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 0 0 20px gray;
+
+    div {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.529);
+        border-radius: 30px;
+    }
+}
+.game3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(foto/carrion.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    border-radius: 30px;
+    transition: 1s;
+
+    div {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: 30px;
+
+    }
+}
+.game3:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(foto/carrion.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 0 0 20px gray;
+
+    div {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.529);
+        border-radius: 30px;
+    }
+}
+.game4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(foto/shadowfight.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    border-radius: 30px;
+    transition: 1s;
+
+    div {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: 30px;
+
+    }
+}
+.game4:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(foto/shadowfight.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 0 0 20px gray;
+
+    div {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.529);
+        border-radius: 30px;
+    }
+}
+.game5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(foto/ciberpunk.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    border-radius: 30px;
+    transition: 1s;
+
+    div {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: 30px;
+
+    }
+}
+.game5:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(foto/ciberpunk.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 0 0 20px gray;
+
+    div {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.529);
+        border-radius: 30px;
+    }
+}
+.game6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(foto/b6f9511b54f72c04b13348f684acbac9.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    border-radius: 30px;
+    transition: 1s;
+
+    div {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: 30px;
+
+    }
+}
+.game6:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(foto/b6f9511b54f72c04b13348f684acbac9.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 0 0 20px gray;
+
+    div {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.529);
+        border-radius: 30px;
+    }
+}
+footer {
+    margin-top: 100px;
+    padding: 40px 0;
+    background: #111;
+    text-align: center;
+}
+
+.foot-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.copy {
+    opacity: 0.6;
+}
+/* ========================= */
+/*      А Д А П Т И В Н О С Т       */
+/* ========================= */
+
+/* --- Телефоны до 480px --- */
+@media (max-width: 480px) {
+
+    header {
+        height: auto;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    header .nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    header a {
+        font-size: 16px;
+    }
+
+    .banner {
+        height: 350px;
+    }
+
+    .overlay h1 {
+        font-size: 26px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .desc {
+        font-size: 16px;
+        width: 95%;
+    }
+
+    .block {
+        gap: 10px;
+        overflow-x: auto;
+    }
+
+    /* блоки с ховером */
+    .bloks,
+    .bloks1,
+    .bloks2,
+    .bloks3,
+    .bloks4,
+    .bloks5 {
+        width: 220px;
+        height: 45px;
+    }
+
+    /* ховер уменьшаем ради мобильного пространства */
+    .bloks:hover,
+    .bloks1:hover,
+    .bloks2:hover,
+    .bloks3:hover,
+    .bloks4:hover,
+    .bloks5:hover {
+        width: 260px;
+        height: 150px;
+    }
+
+    /* Сетка игр → 1 колонка */
+    main {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .games {
+        height: 300px;
+    }
+
+    .games h3 {
+        font-size: 22px;
+    }
+
+    footer {
+        margin-top: 60px;
+        padding: 30px 0;
+    }
+
+    .foot-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* --- Планшеты до 768px --- */
+@media (max-width: 768px) {
+
+    header .nav {
+        width: 80%;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .banner {
+        height: 450px;
+    }
+
+    .overlay h1 {
+        font-size: 32px;
+    }
+
+    /* Сетка игр → 2 колонки */
+    main {
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+    }
+
+    .games {
+        height: 400px;
+    }
+
+    /* чуть меньше карточки по ширине*/
+    .bloks,
+    .bloks1,
+    .bloks2,
+    .bloks3,
+    .bloks4,
+    .bloks5 {
+        width: 260px;
+        height: 50px;
+    }
+
+    .bloks:hover,
+    .bloks1:hover,
+    .bloks2:hover,
+    .bloks3:hover,
+    .bloks4:hover,
+    .bloks5:hover {
+        width: 330px;
+        height: 170px;
+    }
+}

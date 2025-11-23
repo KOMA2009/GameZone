@@ -1,0 +1,346 @@
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    height: 75px;
+    background: linear-gradient(90deg, #000, #0b0b33, #000);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.logo {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    transition: color 1.5s;
+    cursor: default;
+}
+.logo:hover {
+    color: black;
+    text-shadow: 0 0 20px rgb(255 255 255);
+}
+
+.nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav button {
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 1.5s;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.b1 {
+    background: rgba(255, 255, 255, 0);
+}
+.b1 a {
+    color: white;
+    text-decoration: none;
+}
+.b1:hover {
+    background: white;
+}
+.b2 {
+    background: rgba(255, 255, 255, 0);
+}
+.b2 a {
+    color: white;
+    text-decoration: none;
+}
+.b2:hover {
+    background: white;
+}
+.b3 {
+    background-color: rgb(255, 255, 255);
+}
+.b3 a {
+    color: black;
+    text-decoration: none;
+}
+.b4 {
+    background: rgba(255, 255, 255, 0);
+}
+.b4 a {
+    color: white;
+    text-decoration: none;
+}
+.b4:hover {
+    background: white;
+}
+
+/* BUTTON LINKS */
+.nav a {
+    font-size: 18px;
+    transition: color 1.5s;
+}
+.nav a:hover {
+    color: black;
+}
+
+/* TOP CONTAINER */
+.top-container {
+    width: 100%;
+    padding: 30px 0 60px;
+    text-align: center;
+}
+
+.title {
+    font-size: 40px;
+}
+
+.sub {
+    font-size: 20px;
+    opacity: 0.8;
+    margin-bottom: 40px;
+}
+
+/* TABLE */
+.rating-table {
+    width: 90%;
+    margin: 0 auto 50px;
+    border-collapse: collapse;
+    font-size: 18px;
+    color: white;
+}
+
+.rating-table th, .rating-table td {
+    border: 1px solid #444;
+    padding: 12px;
+}
+
+.rating-table th {
+    background: #111;
+}
+
+.rating-table tr td:first-child {
+    font-weight: bold;
+}
+
+/* CARDS */
+.sub2 {
+    font-size: 32px;
+    margin-top: 40px;
+}
+
+.cards {
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    width: 300px;
+    height: 180px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.4s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.07);
+}
+
+.card-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.668);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.foot-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer a:hover {
+    color: #0b0b33;
+}
+
+.copy {
+    opacity: 0.6;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+    .nav {
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+    }
+    .rating-table {
+        font-size: 15px;
+    }
+    .cards {
+        gap: 15px;
+    }
+    .card {
+        width: 90%;
+        height: 180px;
+    }
+}
+
+@media (max-width: 500px) {
+    .title {
+        font-size: 30px;
+    }
+    .sub {
+        font-size: 16px;
+    }
+    .sub2 {
+        font-size: 24px;
+    }
+}
+/* ========================= */
+/*        RESPONSIVE         */
+/* ========================= */
+
+/* --- Планшеты и узкие экраны (до 900px) --- */
+@media (max-width: 900px) {
+    header {
+        height: auto;
+        flex-direction: column;
+        padding: 15px 20px;
+        gap: 10px;
+    }
+
+    .nav {
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .nav button {
+        padding: 8px 12px;
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .sub {
+        font-size: 18px;
+    }
+
+    .rating-table {
+        width: 95%;
+        font-size: 16px;
+    }
+
+    .cards {
+        width: 95%;
+        gap: 20px;
+    }
+
+    .card {
+        width: 45%;
+        height: 170px;
+    }
+}
+
+/* --- Маленькие планшеты и телефоны (до 650px) --- */
+@media (max-width: 650px) {
+
+    .card {
+        width: 80%;
+        height: 160px;
+    }
+
+    .rating-table th,
+    .rating-table td {
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .sub2 {
+        font-size: 22px;
+    }
+}
+
+/* --- Телефоны (до 480px) --- */
+@media (max-width: 480px) {
+
+    header {
+        padding: 10px 10px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .nav button {
+        font-size: 14px;
+        padding: 7px 10px;
+    }
+
+    .rating-table {
+        font-size: 14px;
+    }
+
+    .cards {
+        gap: 15px;
+    }
+
+    .card {
+        width: 95%;
+        height: 150px;
+    }
+
+    footer {
+        padding: 25px 0;
+    }
+
+    .foot-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

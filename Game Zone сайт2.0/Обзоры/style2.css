@@ -1,0 +1,566 @@
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+header {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(90deg, #000, #0b0b33, #000);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        color: white;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        margin-left: 40px;
+        font-size: 26px;
+        font-weight: bold;
+        transition: 1.5s;
+    }
+    .logo:hover {
+        color: black;
+        margin-left: 40px;
+        font-size: 26px;
+        font-weight: bold;
+        text-shadow: 0 0 20px rgb(255, 255, 255);
+    }
+
+    .nav {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .b1 {
+        width: auto;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        transition: 1.5s;
+        color: white;
+        background: rgba(0, 0, 0, 0);
+        
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 1.5s;
+        }
+        a:hover {
+            color: black;
+        }
+    }
+    .b1:hover {
+        width: auto;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        background: white;
+    }
+    .b2 {
+        width: auto;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        transition: 1.5s;
+        color: white;
+        background-color: white;
+        
+        a {
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 1.5s;
+        }
+        a:hover {
+            color: black;
+        }
+    }
+    .b2:hover {
+        width: auto;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        background: white;
+        color: red;
+    }
+    .b3 {
+        width: auto;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        transition: 1.5s;
+        color: white;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .b3:hover {
+        width: auto;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        background: white;
+        color: red;
+    }
+    .b4 {
+        width: auto;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        transition: 1.5s;
+        color: white;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .b4:hover {
+        width: auto;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        background: white;
+        color: red;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        transition: 1.5s;
+    }
+    a:hover {
+        color: black;
+    }
+}
+.horror {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.horror1 {
+    width: 40%;
+    height: 200px;
+    overflow: hidden;
+    background-image: url(foto2/outlast.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 30px;
+    text-align: center;
+    transition: 1s;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.332);
+}
+.horror2 {
+    width: 40%;
+    height: 200px; 
+    overflow: hidden;
+    background-image: url(foto2/Amnesia.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 30px;
+    text-align: center;
+}
+.horror3 {
+    width: 40%;
+    height: 200px;
+    overflow: hidden;
+    background-image: url(foto2/Silent\ Hill\ 2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 30px;
+    text-align: center;
+    transition: 1s;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.332);
+}
+.horror4 {
+    width: 40%;
+    height: 200px;
+    overflow: hidden;
+    background-image: url(foto2/residentevl.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 30px;
+    text-align: center;
+    transition: 1s;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.332);
+}
+.horror5 {
+    width: 40%;
+    height: 200px;
+    overflow: hidden;
+    background-image: url(foto2/phasmofobia.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 30px;
+    text-align: center;
+    transition: 1s;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.332);
+}
+.horror6 {
+    width: 40%;
+    height: 200px;
+    overflow: hidden;
+    background-image: url(foto2/Dead\ Space.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 30px;
+    text-align: center;
+    transition: 1s;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.332);
+}
+.fantasy1 {
+    width: 40%;
+    height: 200px;
+    overflow: hidden;
+    background-image: url(foto2/TheWitcher3WildHunt.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 30px;
+    text-align: center;
+    transition: 1s;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.332);
+}
+.fantasy2 {
+    width: 40%;
+    height: 200px;
+    overflow: hidden;
+    background-image: url(foto2/Skyrim.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 30px;
+    text-align: center;
+    transition: 1s;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.332);
+}
+.fantasy3 {
+    width: 40%;
+    height: 200px;
+    overflow: hidden;
+    background-image: url(foto2/DarkSouls.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 30px;
+    text-align: center;
+    transition: 1s;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.332);
+}
+.fantasy4 {
+    width: 40%;
+    height: 200px;
+    overflow: hidden;
+    background-image: url(foto2/DragonAgeInquisition.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 30px;
+    text-align: center;
+    transition: 1s;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.332);
+}
+.fantasy5 {
+    width: 40%;
+    height: 200px;
+    overflow: hidden;
+    background-image: url(foto2/EldenRing.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 30px;
+    text-align: center;
+    transition: 1s;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.332);
+}
+.fantasy6 {
+    width: 40%;
+    height: 200px;
+    overflow: hidden;
+    background-image: url(foto2/ShadowofWar.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 30px;
+    text-align: center;
+}
+.sandbox1 {
+    width: 40%;
+    height: 200px;
+    overflow: hidden;
+    background-image: url(foto2/Minecraft.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 30px;
+    text-align: center;
+}
+.sandbox2 {
+    width: 40%;
+    height: 200px;
+    overflow: hidden;
+    background-image: url(foto2/Terraria.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 30px;
+    text-align: center;
+}
+.sandbox3 {
+    width: 40%;
+    height: 200px;
+    overflow: hidden;
+    background-image: url(foto2/GarrysMod.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 30px;
+    text-align: center;
+}
+.sandbox4 {
+    width: 40%;
+    height: 200px;
+    overflow: hidden;
+    background-image: url(foto2/ScrapMechanic.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 30px;
+    text-align: center;
+}
+.sandbox5 {
+    width: 40%;
+    height: 200px;
+    overflow: hidden;
+    background-image: url(foto2/Teardown.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 30px;
+    text-align: center;
+}
+.sandbox6 {
+    width: 40%;
+    height: 200px;
+    overflow: hidden;
+    background-image: url(foto2/BeamNG.drive.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 30px;
+    text-align: center;
+}
+.action1 {
+    width: 40%;
+    height: 200px;
+    overflow: hidden;
+    background-image: url(foto2/DOOMEternal.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 30px;
+    text-align: center;
+}
+.action2 {
+    width: 40%;
+    height: 200px;
+    overflow: hidden;
+    background-image: url(foto2/GodofWar\(2018\).jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 30px;
+    text-align: center;
+}
+.action3 {
+    width: 40%;
+    height: 200px;
+    overflow: hidden;
+    background-image: url(foto2/DevilMayCry5.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 30px;
+    text-align: center;
+}
+.action4 {
+    width: 40%;
+    height: 200px;
+    overflow: hidden;
+    background-image: url(foto2/ShadowFight2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 30px;
+    text-align: center;
+}
+.action5 {
+    width: 40%;
+    height: 200px;
+    overflow: hidden;
+    background-image: url(foto2/SekiroShadowsDieTwice.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 30px;
+    text-align: center;
+}
+.action6 {
+    width: 40%;
+    height: 200px;
+    overflow: hidden;
+    background-image: url(foto2/Uncharted\ 4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 30px;
+    text-align: center;
+}
+.div1 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.234);
+}
+footer {
+    margin-top: 100px;
+    padding: 40px 0;
+    background: #111;
+    text-align: center;
+}
+
+.foot-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.copy {
+    opacity: 0.6;
+}
+/* ========================= */
+/*        А Д А П Т И В      */
+/* ========================= */
+
+/* --- Маленькие телефоны (до 480px) --- */
+@media (max-width: 480px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    header .logo {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    header .nav {
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    header a {
+        font-size: 16px;
+    }
+
+    /* Все карточки в один столбец */
+    .horror1, .horror2, .horror3, .horror4, .horror5, .horror6,
+    .fantasy1, .fantasy2, .fantasy3, .fantasy4, .fantasy5, .fantasy6,
+    .sandbox1, .sandbox2, .sandbox3, .sandbox4, .sandbox5, .sandbox6,
+    .action1, .action2, .action3, .action4, .action5, .action6 {
+        width: 90%;
+        height: 180px;
+    }
+
+    .horror, 
+    .fantasy, 
+    .sandbox, 
+    .action {
+        gap: 15px;
+    }
+
+    footer {
+        padding: 25px 0;
+    }
+
+    .foot-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* --- Телефоны / планшеты (до 768px) --- */
+@media (max-width: 768px) {
+
+    header .nav {
+        width: 80%;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* Блоки становятся 1 колонкой на небольших экранах */
+    .horror1, .horror2, .horror3, .horror4, .horror5, .horror6,
+    .fantasy1, .fantasy2, .fantasy3, .fantasy4, .fantasy5, .fantasy6,
+    .sandbox1, .sandbox2, .sandbox3, .sandbox4, .sandbox5, .sandbox6,
+    .action1, .action2, .action3, .action4, .action5, .action6 {
+        width: 80%;
+        height: 190px;
+    }
+
+    .horror, 
+    .fantasy, 
+    .sandbox, 
+    .action {
+        gap: 20px;
+    }
+
+    footer {
+        padding: 30px 0;
+    }
+}
